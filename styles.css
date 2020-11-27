@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+.main {
+    flex-grow: 5;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.nav-button {
+    color: black;
+    top: 50%;
+    font-size: xx-large;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+.nav-button:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+.left-button {
+	margin: 0;
+	text-align: left;
+	width: 5%;
+	float: left;
+   
+}
+
+.right-button {
+	margin: 0;
+	text-align: right;
+	width: 5%;
+	float: left;
+
+  
+}
+
+.play-button {
+    opacity: .5;
+    position: relative;
+    top: 33%;
+    left: 20px;
+    font-size: 35px;
+}
+
+.play-button:hover {
+    opacity: 1;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.position {
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    text-align: center;
+    top: 100%;
+    height: 30px;
+    width: 50%;
+    left: 25%;
+}
+
+#header{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	font-size: 30px;
+    height: 100px;
+    background:
+    -moz-radial-gradient(black 15%, transparent 16%),
+    -moz-radial-gradient(black 15%, transparent 16%),
+    whitesmoke;
+    background:
+    -moz-radial-gradient(black 15%, transparent 16%),
+    -moz-radial-gradient(black 15%, transparent 16%),
+    whitesmoke;
+  background:
+    -webkit-radial-gradient(black 15%, transparent 16%),
+    -webkit-radial-gradient(black 15%, transparent 16%),
+    whitesmoke;
+  background-position: 0 0, 80px 80px;
+
+  -webkit-background-size: 160px 160px;
+  -moz-background-size: 160px 160px;
+  background-size: 160px 160px;
+}
+
+
+.mainBody{
+    display: flex;
+}
+
+.breedList{
+    z-index: 900;
+    background-color: whitesmoke;
+    flex: 1;
+    height: calc(100vh - 100px);
+    overflow: hidden; 
+    overflow-y: scroll;
+    
+}
+
+.right-cell{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #345aff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #345aff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.slideShow{
+	padding-top: 5px;
+    display: none;
+    object-fit: cover;
+}
+
+.breedLi {
+    font-size:px;
+    margin-top: 5px;
+    border-bottom: dotted black 1px;
+    cursor: pointer;
+    color: #322340;
+   	list-style: none;
+    
+}
+
+.content div {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loaderWrapper {
+	margin-top: 20%;
+}
+
+.content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%
+}
+
+.buttons {
+	margin-top: 13%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#message {
+	margin-left: 44%;
+	font-size: 25px;
+	color: gray;
+	text-align: center;
+}
+
+#breed-title{
+	text-align: left;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 30px;
+	font-size: 25px;
+}
